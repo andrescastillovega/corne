@@ -38,33 +38,5 @@
                                     &kp LGUI     &none       &kp SPACE      &kp RET  &none   &kp RALT
                         >;
                 };
-
-                fn_layer {
-// -----------------------------------------------------------------------------------------
-// |  ESC |  F1 |  F2 |  F3 |  F4 |  F5 |   |  F6 |  F7 |  F8 |  F9 | F10 | F11  |
-// | SHFT |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// |      |     |     |     |     |     |   | F12 |     |     |     |     | SHFT |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
-                        bindings = <
-   &kp  ESC  &kp F1   &kp F2 &kp F3   &kp F4   &kp F5      &kp F6    &kp F7    &kp F8    &kp F9   &kp F10  &kp F11
-   &kp LSHFT &none   &none &none   &none   &none      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
-   &none    &none   &none &none   &none   &none      &kp F12   &none    &none    &none   &none   &kp RSHFT
-                             &kp LGUI &none   &kp SPACE   &kp RET   &none    &kp RALT
-                        >;
-                };
-
-                bt_layer {
-// -----------------------------------------------------------------------------------------
-// |      | BT1 | BT2 | BT3 | BT4 | BT5 |   |     |     |     |     |     | BTCLR|
-// |      |     |     |     |     |     |   |CMUTE|VOLDW|VOLUP|     |     |  `   |
-// |      |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    |     |     |     |   |     |     |     |␓
-                        bindings = <
-   &none  &kp BT_SEL 0 &kp BT_SEL 1 &kp BT_SEL 2 &kp BT_SEL 3 &kp BT_SEL 4     &none      &none        &none          &none   &none   &kp BT_CLR
-   &none  &none       &none       &none       &none       &none           &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP    &none   &none   &none
-   &none  &none       &none       &none       &none       &none           &none      &none        &none          &none   &none   &none
-                                     &none       &none       &none           &none      &none        &none
-                        >;
-                };
         };
 };
