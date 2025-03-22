@@ -17,40 +17,40 @@
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
 // | SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+//                    | ALT | LWR | SPC |   | ENT | RSE  | GUI |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &mt LSHFT CAPS &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+                  &kp LALT &mo 1 &kp SPACE   &kp RET &mo 2 &kp RGUI
                         >;
                 };
                 number_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL  |
 // | SHFT |     |     |     |     |     |   | LFT | DWN |  UP | RGT |     |      |
-// |      |     |     |     |     |     |   |     |     |     |     |     | SHFT |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// | CTRL |     |     |     |     |     |   |     |     |     |     |     | SHFT |
+//                    | ALT |     | SPC |   | ENT |     | GUI |
                         bindings = <
    &kp ESC    &kp N1      &kp N2       &kp N3       &kp N4       &kp N5      &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp DEL
    &kp LSHFT  &none      &none       &none       &none       &none      &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
-   &none  &none      &none       &none       &none       &none      &none   &none   &none &none    &none &kp RSHFT
-                                    &kp LGUI     &mo 1       &kp SPACE      &kp RET  &mo 2   &kp RALT
+   &kp CTRL   &none      &none       &none       &none       &none      &none   &none   &none &none    &none &kp RSHFT
+                                    &kp LALT     &mo 1       &kp SPACE      &kp RET  &mo 2   &kp RGUI
                         >;
                 };
                 fn_and_symb_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  F1 |  F2 |  F3 |  F4 |  F5 |   |  F6 |  F7 |  F8 |  F9 | F10 | F11  |
 // | SHFT |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// |      |     |     |     |     |     |   | F12 |     |     |     |     | SHFT |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// | CTRL |     |     |     |     |     |   | F12 |     |     |     |     | SHFT |
+//                    | ALT |     | SPC |   | ENT |     | GUI |
 
 
                         bindings = <
    &kp  ESC  &kp F1   &kp F2 &kp F3   &kp F4   &kp F5      &kp F6    &kp F7    &kp F8    &kp F9   &kp F10  &kp F11
    &kp LSHFT &none   &none &none   &none   &none      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
-   &none    &none   &none &none   &none   &none      &kp F12   &none    &none    &none   &none   &kp RSHFT
-                             &kp LGUI &mo 1   &kp SPACE   &kp RET   &mo 2    &kp RALT
+   &kp CTRL  &none   &none &none   &none   &none      &kp F12   &none    &none    &none   &none   &kp RSHFT
+                             &kp LALT &mo 1   &kp SPACE   &kp RET   &mo 2    &kp RGUI
                         >;
                 };
                 bt_layer {
